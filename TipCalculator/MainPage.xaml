@@ -10,7 +10,10 @@
      
 
             <Label Text="Conta"/>
-            <Entry x:Name="AmountEntry " Placeholder="Digite o Valor da cona"/>
+            
+            <Entry x:Name="AmountEntry" Placeholder="Digite o Valor da cona"
+                   TextChanged="AmountEntry_TextChanged"
+                   />
             
             <Label Text="Gorjeta"/>
                    
@@ -30,9 +33,12 @@
                 Text="15%"/>
 
             <Slider
+                x:Name="TipSlider"
                 Maximum="70"
                 Minimum="0"
-                Value="20"/>
+                Value="20"
+                ValueChanged="TipSlider_ValueChanged"
+                />
 
             
 
